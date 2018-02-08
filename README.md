@@ -56,7 +56,7 @@ Manually implrement the functional programming functions `.forEach`, `.map`,
 and use in other modules.
 
 #### Function Descriptions
-* `.forEach` - executes a function for each item in a collection.
+* `.forEach` - executes a function for each item in a collection. Returns nothing.
 * `.map` - turns one list into a new list by passing each element through
   the callback function and saving each result in the new list.
 * `.filter` - takes all the elements in a list and returns a new list
@@ -85,10 +85,10 @@ const myFunction = (array, cb) => {
 }
 ```
 
-* `fp.forEach` should have the function signature `(array, callback) => Array`
+* `fp.forEach` should have the function signature `(array, callback) => undefined`
 * `fp.map` should have the function signature `(array, callback) => Array`
 * `fp.filter` should have the function signature `(array, callback) => Array`
-* `fp.reduce` should have the function signature `(array, callback, initialState) => data`
+* `fp.reduce` should have the function signature `(array, callback, initialState) => value`
 
 ## Testing
 #### FP Module Tests
